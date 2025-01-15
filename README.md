@@ -37,11 +37,9 @@ Follow the instructions below to clone, run, and deploy the application.
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/<your-username>/employee-management.git
+git clone https://github.com/ayvntz/employee-management.git
 cd employee-management
 ```
-
-Replace `<your-username>` with your GitHub username.
 
 ---
 
@@ -84,32 +82,6 @@ The build files will be generated in the `dist` folder.
 ---
 
 ### 5. Deploy the Application to GitHub Pages
-
-1. Update the `vite.config.js` file to include your GitHub repository name:
-
-   ```javascript
-   export default defineConfig({
-     plugins: [react()],
-     base: '/<your-repo-name>/', // Replace with your repository name
-   });
-   ```
-
-2. Add the following scripts to `package.json` if not already added:
-
-   ```json
-   "scripts": {
-     "build": "vite build",
-     "predeploy": "npm run build",
-     "deploy": "gh-pages -d dist"
-   }
-   ```
-
-3. Deploy the app with:
-
-   ```bash
-   npm run deploy
-   ```
-
 This app is live at:
 
 ```
